@@ -13,14 +13,14 @@
 #define CARDCS          4
 #define DREQ            3
 
-#define SENSOR_PIN      A0 // 0,1,2,5,8,9,10,A0,A1,A2,A3,A4,A5
-#define NUM_FILES       1
+#define SENSOR_PIN      A8 // 0,1,2,5,8,9,10,A0,A1,A2,A3,A4,A5
+#define NUM_FILES       6
 
 Adafruit_VS1053_FilePlayer musicPlayer = Adafruit_VS1053_FilePlayer(SHIELD_RESET, SHIELD_CS, SHIELD_DCS, DREQ, CARDCS);
 
 bool prev;
 bool trackPlaying = false;
-String files[NUM_FILES] = {"/track001.mp3"};
+String files[NUM_FILES] = {"/moller001.wav","/moller002.wav","/moller003.wav","/moller004.wav","/moller005.wav","/moller006.wav"};
 
 void setup() {
   Serial.begin(9600);
