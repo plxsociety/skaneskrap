@@ -40,7 +40,7 @@ void setup() {
     while (1);
   }
 
-  musicPlayer.setVolume(20, 20);
+  musicPlayer.setVolume(10, 10);
   musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);
 }
 
